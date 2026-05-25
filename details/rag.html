@@ -412,6 +412,10 @@ table.data td.use{color:#555;font-size:13px}
 
 <div class="container container-narrow">
 
+
+  <a href="../index.html" style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e5e5e5;color:#1a1a1a;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;margin-bottom:16px;transition:all 0.15s ease" onmouseover="this.style.borderColor='#1a1a1a';this.style.transform='translateX(-2px)'" onmouseout="this.style.borderColor='#e5e5e5';this.style.transform='translateX(0)'">
+    <span style="font-size:16px">←</span> Back to Ecosystem Map
+  </a>
   <nav class="breadcrumbs">
     <a href="../index.html">Map</a>
     <span class="sep">/</span>
@@ -433,14 +437,19 @@ table.data td.use{color:#555;font-size:13px}
   </div>
 
   <section class="pricing-section">
-  <h3 class="block-title">Pricing & Token Usage</h3>
-  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Model</th><th>Input / 1M</th><th>Output / 1M</th><th>Context</th><th>Best for</th></tr></thead><tbody><tr><td class="model">Embeddings (one-time)</td><td class="price">$0.10–$1</td><td class="price">—</td><td class="ctx">—</td><td class="use">Initial indexing</td></tr><tr><td class="model">Vector DB</td><td class="price">$20–$200/mo</td><td class="price">—</td><td class="ctx">—</td><td class="use">Hosting</td></tr><tr><td class="model">LLM generation</td><td class="price">$5–$50/mo</td><td class="price">—</td><td class="ctx">—</td><td class="use">Per 10K queries</td></tr><tr><td class="model">Total for 10K q/mo</td><td class="price">~$50–$300/mo</td><td class="price">—</td><td class="ctx">—</td><td class="use">Typical</td></tr></tbody></table></div></div>
-  <div class="pricing-cta"><a href="../models-pricing.html">Compare all models side-by-side →</a></div>
+  <h3 class="block-title">Pricing</h3>
+  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Plan / Product</th><th>Price</th><th>Notes</th></tr></thead><tbody><tr><td class="model">Embeddings (one-time)</td><td class="price">$0.10–$1</td><td class="use">Initial indexing</td></tr><tr><td class="model">Vector DB</td><td class="price">$20–$200/mo</td><td class="use">Hosting</td></tr><tr><td class="model">LLM generation</td><td class="price">$5–$50/mo</td><td class="use">Per 10K queries</td></tr><tr><td class="model">Total for 10K q/mo</td><td class="price">~$50–$300/mo</td><td class="use">Typical</td></tr></tbody></table></div></div>
 </section>
 
-  <section class="block"><h3 class="block-title">Overview</h3><p>Combines vector search + LLM generation. Dominant pattern for grounding LLMs in proprietary data.</p></section>
+  <section class="block"><h3 class="block-title">In plain English</h3><p><b>RAG</b> = "Retrieval-Augmented Generation." Instead of asking an LLM "what do you know about X?" (it might hallucinate), you first <b>retrieve</b> relevant documents from your data, then ask the LLM to answer based on those documents.</p>
+<p>This is how "chat with your PDFs/docs/codebase" works. Every internal knowledge base, customer support bot, and document Q&A app uses some form of RAG. Has matured into "agentic RAG" — the model decides when and what to retrieve.</p>
+<p><b>Common pitfalls:</b> bad PDF parsing, wrong chunk size, no reranker, no evaluation. Get those right and RAG works beautifully.</p></section>
+<section class="block"><h3 class="block-title">Overview</h3><p>Combines vector search + LLM generation. Dominant pattern for grounding LLMs in proprietary data.</p></section>
 <section class="block"><h3 class="block-title">Use cases</h3><ul><li>Internal knowledge bases</li><li>Customer support bots</li><li>Document analysis</li><li>Code search</li></ul></section>
 <section class="block"><h3 class="block-title">Evolution</h3><p>Matured into 'agentic RAG' with multi-step retrieval, query rewriting, tool use.</p></section>
+<section class="block"><h3 class="block-title">Common pitfalls</h3><ul><li><b>Bad parsing</b> — garbage in, garbage out (esp. tables, PDFs)</li><li><b>No reranking</b> — single-stage retrieval misses relevant chunks</li><li><b>Chunk size wrong</b> — too small loses context, too big loses precision</li><li><b>Embedding mismatch</b> — wrong model for domain</li><li><b>No eval</b> — shipping blind</li></ul></section>
+<section class="block"><h3 class="block-title">Advanced patterns</h3><ul><li><b>Hybrid search</b> (BM25 + vector)</li><li><b>HyDE</b> (hypothetical document embeddings)</li><li><b>Multi-query</b> generation</li><li><b>Recursive retrieval</b> (LlamaIndex)</li><li><b>Agentic RAG</b> — model decides when/what to retrieve</li><li><b>Graph RAG</b> (Microsoft GraphRAG, LightRAG)</li></ul></section>
+<section class="block"><h3 class="block-title">RAG vs long-context</h3><p>2026 debate: with Gemini 3.1 Pro at 2M tokens, do you still need RAG? Answer: yes for cost, latency, citations, and updates. Long context complements RAG, doesn't replace it.</p></section>
 
 
   <footer class="footer" style="margin-top:24px;padding-top:24px;border-top:none">

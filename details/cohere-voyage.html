@@ -412,6 +412,10 @@ table.data td.use{color:#555;font-size:13px}
 
 <div class="container container-narrow">
 
+
+  <a href="../index.html" style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e5e5e5;color:#1a1a1a;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;margin-bottom:16px;transition:all 0.15s ease" onmouseover="this.style.borderColor='#1a1a1a';this.style.transform='translateX(-2px)'" onmouseout="this.style.borderColor='#e5e5e5';this.style.transform='translateX(0)'">
+    <span style="font-size:16px">←</span> Back to Ecosystem Map
+  </a>
   <nav class="breadcrumbs">
     <a href="../index.html">Map</a>
     <span class="sep">/</span>
@@ -433,13 +437,15 @@ table.data td.use{color:#555;font-size:13px}
   </div>
 
   <section class="pricing-section">
-  <h3 class="block-title">Pricing & Token Usage</h3>
-  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Model</th><th>Input / 1M</th><th>Output / 1M</th><th>Context</th><th>Best for</th></tr></thead><tbody><tr><td class="model">Cohere Embed v3</td><td class="price">$0.10/1M</td><td class="price">—</td><td class="ctx">—</td><td class="use">Standard embeddings</td></tr><tr><td class="model">Cohere Rerank 3.5</td><td class="price">$2/1K searches</td><td class="price">—</td><td class="ctx">—</td><td class="use">Reranking</td></tr><tr><td class="model">Voyage-3-large</td><td class="price">$0.18/1M</td><td class="price">—</td><td class="ctx">—</td><td class="use">Top retrieval quality</td></tr><tr><td class="model">Voyage-3-lite</td><td class="price">$0.02/1M</td><td class="price">—</td><td class="ctx">—</td><td class="use">Budget</td></tr></tbody></table></div></div>
-  <div class="pricing-cta"><a href="../models-pricing.html">Compare all models side-by-side →</a></div>
+  <h3 class="block-title">Pricing</h3>
+  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Plan / Product</th><th>Price</th><th>Notes</th></tr></thead><tbody><tr><td class="model">Cohere Embed v3</td><td class="price">$0.10/1M</td><td class="use">Standard embeddings</td></tr><tr><td class="model">Cohere Rerank 3.5</td><td class="price">$2/1K searches</td><td class="use">Reranking</td></tr><tr><td class="model">Voyage-3-large</td><td class="price">$0.18/1M</td><td class="use">Top retrieval quality</td></tr><tr><td class="model">Voyage-3-lite</td><td class="price">$0.02/1M</td><td class="use">Budget</td></tr></tbody></table></div></div>
 </section>
 
-  <section class="block"><h3 class="block-title">Cohere</h3><p>Embed v3 and Rerank 3.5 consistently top retrieval benchmarks. Also makes Command R+.</p></section>
+  <section class="block"><h3 class="block-title">In plain English</h3><p>Two parts to retrieval quality: <b>embeddings</b> (turn text into vectors) and <b>rerankers</b> (re-score search results for accuracy). Cohere and Voyage make the best of both.</p>
+<p><b>Cohere Embed v4</b> and <b>Rerank 3.5</b> are battle-tested in enterprise RAG. <b>Voyage</b> (acquired by MongoDB in 2025) is best for domain-specific work — they offer voyage-law, voyage-finance, voyage-code specialized variants. Adding a reranker typically gives +15-25% retrieval accuracy.</p></section>
+<section class="block"><h3 class="block-title">Cohere</h3><p>Embed v3 and Rerank 3.5 consistently top retrieval benchmarks. Also makes Command R+.</p></section>
 <section class="block"><h3 class="block-title">Voyage AI</h3><p>Specialized in embeddings/rerankers — top for legal, finance, code. Acquired by MongoDB in 2025.</p></section>
+<section class="block"><h3 class="block-title">Why rerankers matter</h3><p>Vector search returns 100 candidates → reranker re-scores top results with cross-encoder. Typically +15-25% relevance lift. Often higher ROI than upgrading the embedding model.</p></section>
 
 
   <footer class="footer" style="margin-top:24px;padding-top:24px;border-top:none">

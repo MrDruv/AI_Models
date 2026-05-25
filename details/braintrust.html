@@ -412,6 +412,10 @@ table.data td.use{color:#555;font-size:13px}
 
 <div class="container container-narrow">
 
+
+  <a href="../index.html" style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e5e5e5;color:#1a1a1a;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;margin-bottom:16px;transition:all 0.15s ease" onmouseover="this.style.borderColor='#1a1a1a';this.style.transform='translateX(-2px)'" onmouseout="this.style.borderColor='#e5e5e5';this.style.transform='translateX(0)'">
+    <span style="font-size:16px">←</span> Back to Ecosystem Map
+  </a>
   <nav class="breadcrumbs">
     <a href="../index.html">Map</a>
     <span class="sep">/</span>
@@ -433,13 +437,17 @@ table.data td.use{color:#555;font-size:13px}
   </div>
 
   <section class="pricing-section">
-  <h3 class="block-title">Pricing & Token Usage</h3>
-  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Model</th><th>Input / 1M</th><th>Output / 1M</th><th>Context</th><th>Best for</th></tr></thead><tbody><tr><td class="model">Braintrust Free</td><td class="price">$0</td><td class="price">—</td><td class="ctx">—</td><td class="use">1K logs/mo</td></tr><tr><td class="model">Braintrust Pro</td><td class="price">$249/mo</td><td class="price">—</td><td class="ctx">—</td><td class="use">Standard</td></tr><tr><td class="model">Langfuse OSS</td><td class="price">Free</td><td class="price">—</td><td class="ctx">—</td><td class="use">Self-host</td></tr><tr><td class="model">Langfuse Cloud</td><td class="price">from $59/mo</td><td class="price">—</td><td class="ctx">—</td><td class="use">Managed</td></tr></tbody></table></div></div>
-  <div class="pricing-cta"><a href="../models-pricing.html">Compare all models side-by-side →</a></div>
+  <h3 class="block-title">Pricing</h3>
+  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Plan / Product</th><th>Price</th><th>Notes</th></tr></thead><tbody><tr><td class="model">Braintrust Free</td><td class="price">$0</td><td class="use">1K logs/mo</td></tr><tr><td class="model">Braintrust Pro</td><td class="price">$249/mo</td><td class="use">Standard</td></tr><tr><td class="model">Langfuse OSS</td><td class="price">Free</td><td class="use">Self-host</td></tr><tr><td class="model">Langfuse Cloud</td><td class="price">from $59/mo</td><td class="use">Managed</td></tr></tbody></table></div></div>
 </section>
 
-  <section class="block"><h3 class="block-title">Braintrust</h3><p>Commercial, popular in YC startups. Strong eval workflow, experiment comparison, scoring functions.</p></section>
+  <section class="block"><h3 class="block-title">In plain English</h3><p><b>Braintrust</b> is to LLM evaluation what GitHub is to code review. You define test cases ("eval datasets") with input + expected output, run your LLM pipeline against them, and compare experiments side-by-side. Popular at YC startups for shipping AI features confidently.</p>
+<p><b>Langfuse</b> is the open-source alternative — self-hostable, beloved by regulated industries (banks, healthcare) that can't send traces to a SaaS.</p></section>
+<section class="block"><h3 class="block-title">Braintrust</h3><p>Commercial, popular in YC startups. Strong eval workflow, experiment comparison, scoring functions.</p></section>
 <section class="block"><h3 class="block-title">Langfuse</h3><p>Open-source, self-hostable. Used in regulated industries.</p></section>
+<section class="block"><h3 class="block-title">Braintrust features</h3><ul><li>Eval-first workflow</li><li>Built-in scoring functions + custom JS/TS scorers</li><li>Experiment comparison UI</li><li>Tracing across frameworks</li><li>Strong typing for prompts</li><li>Used by Notion, Brex, Vercel, Airbnb internal teams</li></ul></section>
+<section class="block"><h3 class="block-title">Langfuse features</h3><ul><li>Open-source (MIT)</li><li>Self-hostable in Docker</li><li>Used in regulated industries (banks, healthcare)</li><li>Active community, fast iteration</li></ul></section>
+<section class="block"><h3 class="block-title">Pick which</h3><ul><li>Braintrust: best UX, commercial workflows</li><li>Langfuse: free, on-prem, compliance</li></ul></section>
 
 
   <footer class="footer" style="margin-top:24px;padding-top:24px;border-top:none">

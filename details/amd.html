@@ -412,6 +412,10 @@ table.data td.use{color:#555;font-size:13px}
 
 <div class="container container-narrow">
 
+
+  <a href="../index.html" style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e5e5e5;color:#1a1a1a;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;margin-bottom:16px;transition:all 0.15s ease" onmouseover="this.style.borderColor='#1a1a1a';this.style.transform='translateX(-2px)'" onmouseout="this.style.borderColor='#e5e5e5';this.style.transform='translateX(0)'">
+    <span style="font-size:16px">←</span> Back to Ecosystem Map
+  </a>
   <nav class="breadcrumbs">
     <a href="../index.html">Map</a>
     <span class="sep">/</span>
@@ -433,13 +437,17 @@ table.data td.use{color:#555;font-size:13px}
   </div>
 
   <section class="pricing-section">
-  <h3 class="block-title">Pricing & Token Usage</h3>
-  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Model</th><th>Input / 1M</th><th>Output / 1M</th><th>Context</th><th>Best for</th></tr></thead><tbody><tr><td class="model">MI300X</td><td class="price">~$10K–$15K</td><td class="price">—</td><td class="ctx">—</td><td class="use">vs $30K+ H100</td></tr><tr><td class="model">Cloud rental</td><td class="price">$2–$5/hr</td><td class="price">—</td><td class="ctx">—</td><td class="use">Hourly</td></tr></tbody></table></div></div>
-  <div class="pricing-cta"><a href="../models-pricing.html">Compare all models side-by-side →</a></div>
+  <h3 class="block-title">Pricing</h3>
+  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Plan / Product</th><th>Price</th><th>Notes</th></tr></thead><tbody><tr><td class="model">MI300X</td><td class="price">~$10K–$15K</td><td class="use">vs $30K+ H100</td></tr><tr><td class="model">Cloud rental</td><td class="price">$2–$5/hr</td><td class="use">Hourly</td></tr></tbody></table></div></div>
 </section>
 
-  <section class="block"><h3 class="block-title">Position</h3><p>MI300X and MI350 compete on memory bandwidth and price. Adoption growing at Meta, Microsoft, Oracle.</p></section>
+  <section class="block"><h3 class="block-title">In plain English</h3><p>The credible #2 to NVIDIA. <b>MI300X</b> has more memory than H100 (192GB vs 80GB) and costs less ($10-15K vs $30K+). <b>MI350</b> (2025) is 35× faster than MI300X for inference.</p>
+<p>The catch: AMD's software (<b>ROCm</b>) still lags NVIDIA's CUDA. PyTorch and vLLM work natively now, but cutting-edge stuff arrives on NVIDIA first. Still — Meta, Microsoft, Oracle, IBM all running serious AMD deployments. OpenAI signed a major MI450 deal in 2025.</p></section>
+<section class="block"><h3 class="block-title">Position</h3><p>MI300X and MI350 compete on memory bandwidth and price. Adoption growing at Meta, Microsoft, Oracle.</p></section>
 <section class="block"><h3 class="block-title">Challenge</h3><p>ROCm software still lags CUDA significantly. AMD improving rapidly but multi-year catch-up.</p></section>
+<section class="block"><h3 class="block-title">MI300X / MI350</h3><ul><li><b>MI300X:</b> 192GB HBM3 (more than H100's 80GB)</li><li><b>MI325X:</b> 256GB HBM3e</li><li><b>MI350 (2025):</b> CDNA 4, 288GB HBM3e, 35× perf of MI300X for inference</li><li><b>MI400 series:</b> announced for 2026</li></ul></section>
+<section class="block"><h3 class="block-title">Adoption</h3><ul><li>Meta committed to large MI300X deployments</li><li>Microsoft Azure offering MI300X instances</li><li>Oracle Cloud Infrastructure</li><li>IBM Cloud</li><li>OpenAI signed MI450 deal (2025) — major win</li></ul></section>
+<section class="block"><h3 class="block-title">ROCm progress</h3><p>AMD's CUDA equivalent. Historically far behind, but 2025-26 saw major improvements: PyTorch native support, vLLM compatibility, FlashAttention-2 working. Still 6-18 months behind CUDA for cutting-edge work.</p></section>
 
 
   <footer class="footer" style="margin-top:24px;padding-top:24px;border-top:none">

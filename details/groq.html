@@ -412,6 +412,10 @@ table.data td.use{color:#555;font-size:13px}
 
 <div class="container container-narrow">
 
+
+  <a href="../index.html" style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e5e5e5;color:#1a1a1a;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;margin-bottom:16px;transition:all 0.15s ease" onmouseover="this.style.borderColor='#1a1a1a';this.style.transform='translateX(-2px)'" onmouseout="this.style.borderColor='#e5e5e5';this.style.transform='translateX(0)'">
+    <span style="font-size:16px">←</span> Back to Ecosystem Map
+  </a>
   <nav class="breadcrumbs">
     <a href="../index.html">Map</a>
     <span class="sep">/</span>
@@ -435,11 +439,17 @@ table.data td.use{color:#555;font-size:13px}
   <section class="pricing-section">
   <h3 class="block-title">Pricing & Token Usage</h3>
   <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Model</th><th>Input / 1M</th><th>Output / 1M</th><th>Context</th><th>Best for</th></tr></thead><tbody><tr><td class="model">Llama 4 Maverick</td><td class="price">$0.20</td><td class="price">$0.60</td><td class="ctx">1M</td><td class="use">~500 tokens/sec</td></tr><tr><td class="model">Llama 3.3 70B</td><td class="price">$0.59</td><td class="price">$0.79</td><td class="ctx">128K</td><td class="use">~250 tokens/sec</td></tr><tr><td class="model">DeepSeek R1 Distil</td><td class="price">$0.75</td><td class="price">$0.99</td><td class="ctx">128K</td><td class="use">Fast reasoning</td></tr><tr><td class="model">Whisper Large v3</td><td class="price">$0.04/hr audio</td><td class="price">—</td><td class="ctx">—</td><td class="use">STT</td></tr></tbody></table></div></div>
-  <div class="pricing-cta"><a href="../models-pricing.html">Compare all models side-by-side →</a></div>
 </section>
 
-  <section class="block"><h3 class="block-title">Overview</h3><p>Groq designs LPUs (Language Processing Units) — custom chips for inference. 500+ tokens/sec on Llama makes responses feel instant.</p></section>
+  <section class="block"><h3 class="block-title">In plain English</h3><p>Groq makes a custom chip called the <b>LPU</b> (Language Processing Unit). Where NVIDIA GPUs are jacks-of-all-trades, the LPU does one thing extremely well: <b>serve LLMs absurdly fast</b> — 500+ tokens per second on Llama 3.3 70B, which feels almost instant.</p>
+<p>Trade-off: you can only run open models (no GPT/Claude), and the model selection is curated. Perfect for real-time voice agents, fast UX prototypes, or anywhere latency is the bottleneck.</p></section>
+<section class="block"><h3 class="block-title">Overview</h3><p>Groq designs LPUs (Language Processing Units) — custom chips for inference. 500+ tokens/sec on Llama makes responses feel instant.</p></section>
 <section class="block"><h3 class="block-title">Best for</h3><p>Real-time voice agents, fast UX prototypes, anywhere latency matters.</p></section>
+<section class="block"><h3 class="block-title">Why so fast</h3><ul><li>Custom <b>LPU</b> (Language Processing Unit) — deterministic SIMD architecture</li><li>No DRAM bottleneck (on-chip SRAM)</li><li>500+ tokens/sec on Llama 3.3 70B</li><li>~1000 tok/sec on smaller Llama variants</li><li>~75% lower power than GPU equivalents</li></ul></section>
+<section class="block"><h3 class="block-title">Hosted models</h3><p>Llama 3.x/4 family, Mixtral, Qwen, DeepSeek R1 distilled, Gemma, Whisper Large v3 (~250× realtime audio).</p></section>
+<section class="block"><h3 class="block-title">Customers</h3><ul><li>Argonne National Lab</li><li>Aramco Digital</li><li>Bell Canada</li><li>Many real-time voice agent startups</li></ul></section>
+<section class="block"><h3 class="block-title">Funding</h3><ul><li>$1.5B from Saudi PIF (2025)</li><li>$640M Series D (Aug 2024) at $2.8B valuation</li><li>Total raised: ~$2.5B</li></ul></section>
+<section class="block"><h3 class="block-title">Limits</h3><ul><li>Only hosted open models (no GPT/Claude)</li><li>Limited model selection vs. GPU-based providers</li><li>Less flexibility for custom models</li></ul></section>
 
 
   <footer class="footer" style="margin-top:24px;padding-top:24px;border-top:none">

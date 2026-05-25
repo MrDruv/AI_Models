@@ -412,6 +412,10 @@ table.data td.use{color:#555;font-size:13px}
 
 <div class="container container-narrow">
 
+
+  <a href="../index.html" style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e5e5e5;color:#1a1a1a;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;margin-bottom:16px;transition:all 0.15s ease" onmouseover="this.style.borderColor='#1a1a1a';this.style.transform='translateX(-2px)'" onmouseout="this.style.borderColor='#e5e5e5';this.style.transform='translateX(0)'">
+    <span style="font-size:16px">←</span> Back to Ecosystem Map
+  </a>
   <nav class="breadcrumbs">
     <a href="../index.html">Map</a>
     <span class="sep">/</span>
@@ -433,13 +437,14 @@ table.data td.use{color:#555;font-size:13px}
   </div>
 
   <section class="pricing-section">
-  <h3 class="block-title">Pricing & Token Usage</h3>
-  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Model</th><th>Input / 1M</th><th>Output / 1M</th><th>Context</th><th>Best for</th></tr></thead><tbody><tr><td class="model">Chroma OSS</td><td class="price">Free</td><td class="price">—</td><td class="ctx">—</td><td class="use">Embedded</td></tr><tr><td class="model">Chroma Cloud</td><td class="price">~$0.10/GB/mo</td><td class="price">—</td><td class="ctx">—</td><td class="use">Managed</td></tr><tr><td class="model">pgvector</td><td class="price">Free</td><td class="price">—</td><td class="ctx">—</td><td class="use">Extension</td></tr></tbody></table></div></div>
-  <div class="pricing-cta"><a href="../models-pricing.html">Compare all models side-by-side →</a></div>
+  <h3 class="block-title">Pricing</h3>
+  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Plan / Product</th><th>Price</th><th>Notes</th></tr></thead><tbody><tr><td class="model">Chroma OSS</td><td class="price">Free</td><td class="use">Embedded</td></tr><tr><td class="model">Chroma Cloud</td><td class="price">~$0.10/GB/mo</td><td class="use">Managed</td></tr><tr><td class="model">pgvector</td><td class="price">Free</td><td class="use">Extension</td></tr></tbody></table></div></div>
 </section>
 
-  <section class="block"><h3 class="block-title">Chroma</h3><p>Embedded, pip-installable. Perfect for prototyping.</p></section>
+  <section class="block"><h3 class="block-title">In plain English</h3><p>The "easy mode" of vector DBs. <b>Chroma</b> is <code>pip install</code> and you're indexing in 5 lines of Python — perfect for prototypes and small apps. <b>pgvector</b> is a Postgres extension that turns your existing database into a vector store — perfect if your team already runs Postgres (most do).</p></section>
+<section class="block"><h3 class="block-title">Chroma</h3><p>Embedded, pip-installable. Perfect for prototyping.</p></section>
 <section class="block"><h3 class="block-title">pgvector</h3><p>Postgres extension. Your existing DB becomes a vector store. Massive adoption.</p></section>
+<section class="block"><h3 class="block-title">When to pick what</h3><ul><li>Prototype: <b>Chroma</b></li><li>Already on Postgres: <b>pgvector</b></li><li>Need managed at scale: <b>Pinecone</b></li><li>Need self-host + speed: <b>Qdrant</b></li></ul></section>
 
 
   <footer class="footer" style="margin-top:24px;padding-top:24px;border-top:none">

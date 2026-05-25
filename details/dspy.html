@@ -412,6 +412,10 @@ table.data td.use{color:#555;font-size:13px}
 
 <div class="container container-narrow">
 
+
+  <a href="../index.html" style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e5e5e5;color:#1a1a1a;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;margin-bottom:16px;transition:all 0.15s ease" onmouseover="this.style.borderColor='#1a1a1a';this.style.transform='translateX(-2px)'" onmouseout="this.style.borderColor='#e5e5e5';this.style.transform='translateX(0)'">
+    <span style="font-size:16px">←</span> Back to Ecosystem Map
+  </a>
   <nav class="breadcrumbs">
     <a href="../index.html">Map</a>
     <span class="sep">/</span>
@@ -433,13 +437,17 @@ table.data td.use{color:#555;font-size:13px}
   </div>
 
   <section class="pricing-section">
-  <h3 class="block-title">Pricing & Token Usage</h3>
-  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Model</th><th>Input / 1M</th><th>Output / 1M</th><th>Context</th><th>Best for</th></tr></thead><tbody><tr><td class="model">Open source (MIT)</td><td class="price">Free</td><td class="price">—</td><td class="ctx">—</td><td class="use">LLM calls only</td></tr></tbody></table></div></div>
-  <div class="pricing-cta"><a href="../models-pricing.html">Compare all models side-by-side →</a></div>
+  <h3 class="block-title">Pricing</h3>
+  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Plan / Product</th><th>Price</th><th>Notes</th></tr></thead><tbody><tr><td class="model">Open source (MIT)</td><td class="price">Free</td><td class="use">LLM calls only</td></tr></tbody></table></div></div>
 </section>
 
-  <section class="block"><h3 class="block-title">Overview</h3><p>Treats prompts as compilable programs. Define signatures (inputs/outputs); DSPy auto-optimizes prompts, few-shot examples, chains.</p></section>
+  <section class="block"><h3 class="block-title">In plain English</h3><p>Most teams write prompts by hand and tweak them by intuition. DSPy treats prompts as <b>compilable programs</b> — you declare what you want (inputs → outputs), provide a quality metric, and DSPy automatically finds the best prompts and few-shot examples through optimization.</p>
+<p>Powerful for advanced pipelines (multi-hop RAG, complex reasoning) where you can measure quality objectively. Steeper learning curve, but the gains are real when applied to the right problem.</p></section>
+<section class="block"><h3 class="block-title">Overview</h3><p>Treats prompts as compilable programs. Define signatures (inputs/outputs); DSPy auto-optimizes prompts, few-shot examples, chains.</p></section>
 <section class="block"><h3 class="block-title">Best for</h3><p>Advanced pipelines with defined metrics (RAG accuracy, multi-hop reasoning).</p></section>
+<section class="block"><h3 class="block-title">Core idea</h3><p>Treats LLM prompts as compilable programs. Define signatures (input/output types), composes them into pipelines, then DSPy auto-optimizes few-shot examples and prompts using metrics — like ML training for prompts.</p></section>
+<section class="block"><h3 class="block-title">When to use</h3><ul><li>Multi-hop RAG</li><li>Complex reasoning pipelines</li><li>When you can define a clear quality metric</li><li>Research and benchmarking</li></ul></section>
+<section class="block"><h3 class="block-title">Origin</h3><p>Created by Omar Khattab (Stanford). Now maintained by a broader community.</p></section>
 
 
   <footer class="footer" style="margin-top:24px;padding-top:24px;border-top:none">

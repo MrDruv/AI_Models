@@ -412,6 +412,10 @@ table.data td.use{color:#555;font-size:13px}
 
 <div class="container container-narrow">
 
+
+  <a href="../index.html" style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e5e5e5;color:#1a1a1a;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;margin-bottom:16px;transition:all 0.15s ease" onmouseover="this.style.borderColor='#1a1a1a';this.style.transform='translateX(-2px)'" onmouseout="this.style.borderColor='#e5e5e5';this.style.transform='translateX(0)'">
+    <span style="font-size:16px">←</span> Back to Ecosystem Map
+  </a>
   <nav class="breadcrumbs">
     <a href="../index.html">Map</a>
     <span class="sep">/</span>
@@ -433,13 +437,18 @@ table.data td.use{color:#555;font-size:13px}
   </div>
 
   <section class="pricing-section">
-  <h3 class="block-title">Pricing & Token Usage</h3>
-  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Model</th><th>Input / 1M</th><th>Output / 1M</th><th>Context</th><th>Best for</th></tr></thead><tbody><tr><td class="model">Standard</td><td class="price">full</td><td class="price">full</td><td class="ctx">varies</td><td class="use">Default</td></tr><tr><td class="model">Cache write</td><td class="price">1.25×</td><td class="price">—</td><td class="ctx">—</td><td class="use">First call</td></tr><tr><td class="model">Cache read</td><td class="price">0.1× (-90%)</td><td class="price">—</td><td class="ctx">—</td><td class="use">Subsequent calls</td></tr><tr><td class="model">Batch API</td><td class="price">-50%</td><td class="price">-50%</td><td class="ctx">—</td><td class="use">Async 24h</td></tr></tbody></table></div></div>
-  <div class="pricing-cta"><a href="../models-pricing.html">Compare all models side-by-side →</a></div>
+  <h3 class="block-title">Pricing</h3>
+  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Plan / Product</th><th>Price</th><th>Notes</th></tr></thead><tbody><tr><td class="model">Standard</td><td class="price">full · full</td><td class="use">varies · Default</td></tr><tr><td class="model">Cache write</td><td class="price">1.25×</td><td class="use">First call</td></tr><tr><td class="model">Cache read</td><td class="price">0.1× (-90%)</td><td class="use">Subsequent calls</td></tr><tr><td class="model">Batch API</td><td class="price">-50% · -50%</td><td class="use">Async 24h</td></tr></tbody></table></div></div>
 </section>
 
-  <section class="block"><h3 class="block-title">Overview</h3><p>Anthropic's official API. Strong enterprise SLAs, large context windows, Computer Use beta where Claude controls a virtual desktop.</p></section>
+  <section class="block"><h3 class="block-title">In plain English</h3><p>This is Anthropic's developer portal — Claude as an API. Same shape as OpenAI's (chat completions, streaming, tools, vision) but with one killer feature: <b>prompt caching</b>, which can cut your bill by 90% if you have a large repeated system prompt or context.</p>
+<p><b>Computer Use</b> beta lets Claude actually control a virtual desktop — clicking, typing, scrolling. It's the cleanest path to "AI does work on a real screen."</p></section>
+<section class="block"><h3 class="block-title">Overview</h3><p>Anthropic's official API. Strong enterprise SLAs, large context windows, Computer Use beta where Claude controls a virtual desktop.</p></section>
 <section class="block"><h3 class="block-title">Features</h3><ul><li>Prompt caching (up to 90% off)</li><li>Tool use / function calling</li><li>Computer Use beta</li><li>Native PDF support</li></ul></section>
+<section class="block"><h3 class="block-title">Developer features</h3><ul><li>Messages API with streaming</li><li>Tool use / function calling</li><li><b>Prompt caching</b> — up to 90% off repeated context</li><li>Computer Use beta</li><li>Native PDF support</li><li>Vision input</li><li>Batches API (24h, 50% off)</li><li>Citations API for source-grounded answers</li></ul></section>
+<section class="block"><h3 class="block-title">Rate limits</h3><ul><li><b>Free tier:</b> trial credits, limited rate</li><li><b>Build:</b> auto-scaling based on usage</li><li><b>Scale:</b> committed contracts, dedicated capacity</li><li><b>Priority Tier</b> — guaranteed throughput</li></ul></section>
+<section class="block"><h3 class="block-title">Compliance</h3><ul><li>SOC 2 Type II</li><li>HIPAA-eligible via AWS Bedrock</li><li>Zero data retention (ZDR) for paid tiers</li><li>EU data residency via AWS</li></ul></section>
+<section class="block"><h3 class="block-title">SDKs</h3><ul><li>Official: Python, TypeScript</li><li>Available via AWS Bedrock, Google Vertex AI</li><li>Anthropic Agents SDK (2025)</li></ul></section>
 
 
   <footer class="footer" style="margin-top:24px;padding-top:24px;border-top:none">

@@ -412,6 +412,10 @@ table.data td.use{color:#555;font-size:13px}
 
 <div class="container container-narrow">
 
+
+  <a href="../index.html" style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e5e5e5;color:#1a1a1a;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;margin-bottom:16px;transition:all 0.15s ease" onmouseover="this.style.borderColor='#1a1a1a';this.style.transform='translateX(-2px)'" onmouseout="this.style.borderColor='#e5e5e5';this.style.transform='translateX(0)'">
+    <span style="font-size:16px">←</span> Back to Ecosystem Map
+  </a>
   <nav class="breadcrumbs">
     <a href="../index.html">Map</a>
     <span class="sep">/</span>
@@ -433,13 +437,18 @@ table.data td.use{color:#555;font-size:13px}
   </div>
 
   <section class="pricing-section">
-  <h3 class="block-title">Pricing & Token Usage</h3>
-  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Model</th><th>Input / 1M</th><th>Output / 1M</th><th>Context</th><th>Best for</th></tr></thead><tbody><tr><td class="model">Mem0 OSS</td><td class="price">Free</td><td class="price">—</td><td class="ctx">—</td><td class="use">Open source</td></tr><tr><td class="model">Mem0 Cloud</td><td class="price">from $19/mo</td><td class="price">—</td><td class="ctx">—</td><td class="use">Managed</td></tr><tr><td class="model">Zep</td><td class="price">from $20/mo</td><td class="price">—</td><td class="ctx">—</td><td class="use">Cloud</td></tr><tr><td class="model">Letta</td><td class="price">Free</td><td class="price">—</td><td class="ctx">—</td><td class="use">Open source</td></tr></tbody></table></div></div>
-  <div class="pricing-cta"><a href="../models-pricing.html">Compare all models side-by-side →</a></div>
+  <h3 class="block-title">Pricing</h3>
+  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Plan / Product</th><th>Price</th><th>Notes</th></tr></thead><tbody><tr><td class="model">Mem0 OSS</td><td class="price">Free</td><td class="use">Open source</td></tr><tr><td class="model">Mem0 Cloud</td><td class="price">from $19/mo</td><td class="use">Managed</td></tr><tr><td class="model">Zep</td><td class="price">from $20/mo</td><td class="use">Cloud</td></tr><tr><td class="model">Letta</td><td class="price">Free</td><td class="use">Open source</td></tr></tbody></table></div></div>
 </section>
 
-  <section class="block"><h3 class="block-title">Why it matters</h3><p>Agents need to remember users across sessions — preferences, history, context.</p></section>
+  <section class="block"><h3 class="block-title">In plain English</h3><p>LLMs forget everything between conversations. <b>Memory layers</b> like Mem0, Zep, and Letta give agents persistent recall — your preferences, past decisions, conversation history, evolving facts about you.</p>
+<p>Long context windows alone aren't memory (re-sending 2M tokens every time is wasteful). These tools store, summarize, and retrieve just the relevant bits. Active research and product area in 2026.</p></section>
+<section class="block"><h3 class="block-title">Why it matters</h3><p>Agents need to remember users across sessions — preferences, history, context.</p></section>
 <section class="block"><h3 class="block-title">Players</h3><ul><li><b>Mem0</b> — popular open-source</li><li><b>Zep</b> — graph + vector + temporal</li><li><b>Letta</b> (formerly MemGPT) — hierarchical memory</li></ul></section>
+<section class="block"><h3 class="block-title">Mem0</h3><ul><li>Open-source (Apache 2.0)</li><li>Hierarchical memory — semantic, episodic, procedural</li><li>Mem0 Cloud for managed</li><li>Integrates with OpenAI, Anthropic, Vercel AI SDK</li></ul></section>
+<section class="block"><h3 class="block-title">Zep</h3><ul><li>Graph + vector memory</li><li>Temporal knowledge graph (fact-tracking over time)</li><li>Fast retrieval with summarization</li></ul></section>
+<section class="block"><h3 class="block-title">Letta (formerly MemGPT)</h3><ul><li>Research-derived hierarchical memory</li><li>OS-like context management</li><li>Self-editing memory blocks</li></ul></section>
+<section class="block"><h3 class="block-title">Why this matters</h3><p>Long context alone isn't memory. Agents need persistent state across sessions: user preferences, past decisions, conversation history, evolving facts. This is an active research and product area in 2026.</p></section>
 
 
   <footer class="footer" style="margin-top:24px;padding-top:24px;border-top:none">

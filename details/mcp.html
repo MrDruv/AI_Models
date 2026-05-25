@@ -412,6 +412,10 @@ table.data td.use{color:#555;font-size:13px}
 
 <div class="container container-narrow">
 
+
+  <a href="../index.html" style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e5e5e5;color:#1a1a1a;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;margin-bottom:16px;transition:all 0.15s ease" onmouseover="this.style.borderColor='#1a1a1a';this.style.transform='translateX(-2px)'" onmouseout="this.style.borderColor='#e5e5e5';this.style.transform='translateX(0)'">
+    <span style="font-size:16px">←</span> Back to Ecosystem Map
+  </a>
   <nav class="breadcrumbs">
     <a href="../index.html">Map</a>
     <span class="sep">/</span>
@@ -433,13 +437,17 @@ table.data td.use{color:#555;font-size:13px}
   </div>
 
   <section class="pricing-section">
-  <h3 class="block-title">Pricing & Token Usage</h3>
-  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Model</th><th>Input / 1M</th><th>Output / 1M</th><th>Context</th><th>Best for</th></tr></thead><tbody><tr><td class="model">Open protocol</td><td class="price">Free</td><td class="price">—</td><td class="ctx">—</td><td class="use">No licensing fees</td></tr></tbody></table></div></div>
-  <div class="pricing-cta"><a href="../models-pricing.html">Compare all models side-by-side →</a></div>
+  <h3 class="block-title">Pricing</h3>
+  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Plan / Product</th><th>Price</th><th>Notes</th></tr></thead><tbody><tr><td class="model">Open protocol</td><td class="price">Free</td><td class="use">No licensing fees</td></tr></tbody></table></div></div>
 </section>
 
-  <section class="block"><h3 class="block-title">Overview</h3><p>Created by Anthropic, adopted by OpenAI, Google, Cursor, Windsurf. Lets any model talk to any tool via standard JSON-RPC.</p></section>
+  <section class="block"><h3 class="block-title">In plain English</h3><p><b>The "USB-C of AI."</b> Before MCP, every AI tool integration was custom — Claude tools, OpenAI functions, ChatGPT plugins, Cursor extensions all had different formats. MCP (created by Anthropic, now adopted by OpenAI, Google, Cursor, Windsurf, and many others) is a single open standard for connecting any AI model to any tool, data source, or app.</p>
+<p>1000+ MCP servers exist already — GitHub, Postgres, Slack, Linear, Notion, Stripe, etc. Build a tool once, use it with any model. This is becoming the de facto integration standard the way LSP did for code editors.</p></section>
+<section class="block"><h3 class="block-title">Overview</h3><p>Created by Anthropic, adopted by OpenAI, Google, Cursor, Windsurf. Lets any model talk to any tool via standard JSON-RPC.</p></section>
 <section class="block"><h3 class="block-title">Why it matters</h3><ul><li>Build a tool once, use with any model</li><li>1000+ MCP servers exist</li><li>Standard for IDE / agent integration</li></ul></section>
+<section class="block"><h3 class="block-title">Adoption (May 2026)</h3><ul><li><b>1000+ MCP servers</b> in registry</li><li>Supported in: Claude Desktop, Cursor, Windsurf, Cline, Zed, VS Code (Cursor fork)</li><li>OpenAI added native MCP support (Q2 2025)</li><li>Google Gemini supports MCP (Q3 2025)</li><li>Becoming de facto standard like LSP did for editors</li></ul></section>
+<section class="block"><h3 class="block-title">Architecture</h3><ul><li>JSON-RPC over stdio or SSE</li><li>Three primitives: <b>Resources</b>, <b>Tools</b>, <b>Prompts</b></li><li>Servers expose capabilities; clients (LLMs) consume them</li><li>Authentication via OAuth 2.0 (added 2025)</li></ul></section>
+<section class="block"><h3 class="block-title">Popular MCP servers</h3><p>GitHub, Filesystem, Postgres, Brave Search, Slack, Linear, Notion, Memory, Puppeteer, Stripe, Cloudflare, Sentry, and many more.</p></section>
 
 
   <footer class="footer" style="margin-top:24px;padding-top:24px;border-top:none">

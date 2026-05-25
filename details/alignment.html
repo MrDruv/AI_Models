@@ -412,6 +412,10 @@ table.data td.use{color:#555;font-size:13px}
 
 <div class="container container-narrow">
 
+
+  <a href="../index.html" style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e5e5e5;color:#1a1a1a;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;margin-bottom:16px;transition:all 0.15s ease" onmouseover="this.style.borderColor='#1a1a1a';this.style.transform='translateX(-2px)'" onmouseout="this.style.borderColor='#e5e5e5';this.style.transform='translateX(0)'">
+    <span style="font-size:16px">←</span> Back to Ecosystem Map
+  </a>
   <nav class="breadcrumbs">
     <a href="../index.html">Map</a>
     <span class="sep">/</span>
@@ -433,13 +437,19 @@ table.data td.use{color:#555;font-size:13px}
   </div>
 
   <section class="pricing-section">
-  <h3 class="block-title">Pricing & Token Usage</h3>
-  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Model</th><th>Input / 1M</th><th>Output / 1M</th><th>Context</th><th>Best for</th></tr></thead><tbody><tr><td class="model">Research field</td><td class="price">Free</td><td class="price">—</td><td class="ctx">—</td><td class="use">Open arxiv papers</td></tr></tbody></table></div></div>
-  <div class="pricing-cta"><a href="../models-pricing.html">Compare all models side-by-side →</a></div>
+  <h3 class="block-title">Pricing</h3>
+  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Plan / Product</th><th>Price</th><th>Notes</th></tr></thead><tbody><tr><td class="model">Research field</td><td class="price">Free</td><td class="use">Open arxiv papers</td></tr></tbody></table></div></div>
 </section>
 
-  <section class="block"><h3 class="block-title">Techniques</h3><ul><li><b>RLHF</b></li><li><b>DPO</b></li><li><b>Constitutional AI</b> (Anthropic)</li><li><b>RLAIF</b></li></ul></section>
+  <section class="block"><h3 class="block-title">In plain English</h3><p>The research field focused on making AI systems <b>do what we actually want</b>, not just what we literally said, and not have hidden goals we'd object to.</p>
+<p><b>Techniques:</b> RLHF (humans rate outputs), DPO (simpler alternative), Constitutional AI (Anthropic — train on principles), RLAIF (use AI itself to scale feedback). <b>Active research:</b> mechanistic interpretability (looking inside the model), scalable oversight (supervising superhuman models), deceptive alignment (catching models that act aligned but aren't).</p>
+<p><b>Who's working on it:</b> Anthropic (largest team, ~30% of staff), OpenAI (smaller now after Superalignment team disbanded), Google DeepMind, plus independents like METR, Apollo, Redwood Research.</p></section>
+<section class="block"><h3 class="block-title">Techniques</h3><ul><li><b>RLHF</b></li><li><b>DPO</b></li><li><b>Constitutional AI</b> (Anthropic)</li><li><b>RLAIF</b></li></ul></section>
 <section class="block"><h3 class="block-title">Active research</h3><ul><li>Mechanistic interpretability</li><li>Scalable oversight</li><li>Deceptive alignment</li><li>Jailbreak defenses</li></ul></section>
+<section class="block"><h3 class="block-title">Major techniques</h3><ul><li><b>RLHF</b> — reinforcement learning from human feedback</li><li><b>DPO / IPO</b> — simpler direct preference optimization</li><li><b>Constitutional AI</b> (Anthropic) — train on principles instead of pure feedback</li><li><b>RLAIF</b> — AI feedback replacing humans at scale</li><li><b>Process supervision</b> — reward reasoning steps, not just outputs</li></ul></section>
+<section class="block"><h3 class="block-title">Active research areas</h3><ul><li><b>Mechanistic interpretability</b> — Anthropic's circuit tracing, sparse autoencoders</li><li><b>Scalable oversight</b> — supervising superhuman models</li><li><b>Deceptive alignment</b> — preventing models that act aligned but aren't</li><li><b>Weak-to-strong generalization</b></li><li><b>Jailbreak robustness</b></li></ul></section>
+<section class="block"><h3 class="block-title">Major labs working on it</h3><ul><li><b>Anthropic</b> — largest dedicated team, ~30% of staff</li><li><b>OpenAI</b> — Superalignment team disbanded May 2024 (controversial); preparedness team continues</li><li><b>Google DeepMind</b> — AGI Safety team</li><li><b>METR, Apollo, Redwood Research</b> — independent eval orgs</li><li><b>MATS, Constellation</b> — research training programs</li></ul></section>
+<section class="block"><h3 class="block-title">Industry coordination</h3><ul><li>Frontier Model Forum (OpenAI, Anthropic, Google, Microsoft)</li><li>Voluntary commitments with US/UK AISI</li><li>Responsible Scaling Policies published by major labs</li></ul></section>
 
 
   <footer class="footer" style="margin-top:24px;padding-top:24px;border-top:none">

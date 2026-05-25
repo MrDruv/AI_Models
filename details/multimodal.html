@@ -412,6 +412,10 @@ table.data td.use{color:#555;font-size:13px}
 
 <div class="container container-narrow">
 
+
+  <a href="../index.html" style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e5e5e5;color:#1a1a1a;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;margin-bottom:16px;transition:all 0.15s ease" onmouseover="this.style.borderColor='#1a1a1a';this.style.transform='translateX(-2px)'" onmouseout="this.style.borderColor='#e5e5e5';this.style.transform='translateX(0)'">
+    <span style="font-size:16px">←</span> Back to Ecosystem Map
+  </a>
   <nav class="breadcrumbs">
     <a href="../index.html">Map</a>
     <span class="sep">/</span>
@@ -433,13 +437,16 @@ table.data td.use{color:#555;font-size:13px}
   </div>
 
   <section class="pricing-section">
-  <h3 class="block-title">Pricing & Token Usage</h3>
-  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Model</th><th>Input / 1M</th><th>Output / 1M</th><th>Context</th><th>Best for</th></tr></thead><tbody><tr><td class="model">Same as text models</td><td class="price">per-token</td><td class="price">—</td><td class="ctx">—</td><td class="use">Images = 85–765 tokens</td></tr><tr><td class="model">Video (Gemini)</td><td class="price">~258 tokens/frame</td><td class="price">—</td><td class="ctx">—</td><td class="use">Native video</td></tr></tbody></table></div></div>
-  <div class="pricing-cta"><a href="../models-pricing.html">Compare all models side-by-side →</a></div>
+  <h3 class="block-title">Pricing</h3>
+  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Plan / Product</th><th>Price</th><th>Notes</th></tr></thead><tbody><tr><td class="model">Same as text models</td><td class="price">per-token</td><td class="use">Images = 85–765 tokens</td></tr><tr><td class="model">Video (Gemini)</td><td class="price">~258 tokens/frame</td><td class="use">Native video</td></tr></tbody></table></div></div>
 </section>
 
-  <section class="block"><h3 class="block-title">Leading models</h3><ul><li><b>GPT-4o/5</b> — text+image+audio</li><li><b>Gemini 2.5</b> — native audio I/O</li><li><b>Claude</b> — strong vision</li><li><b>Qwen-VL, Llama Vision</b></li></ul></section>
+  <section class="block"><h3 class="block-title">In plain English</h3><p>Models that handle <b>multiple input types</b> — text + images + audio + video — in a single model, not stitched together from separate ones. <b>GPT-4o</b>, <b>Claude</b>, <b>Gemini 2.5+</b>, <b>Qwen-VL</b>, <b>Llama Vision</b> all native multimodal.</p>
+<p><b>Why it matters:</b> you can show an LLM a screenshot, photo, chart, or video and ask questions about it. Gemini 2.5+ can hold up to 2 hours of video in context. Most new frontier models are multimodal by default — "text-only" is becoming the exception.</p></section>
+<section class="block"><h3 class="block-title">Leading models</h3><ul><li><b>GPT-4o/5</b> — text+image+audio</li><li><b>Gemini 2.5</b> — native audio I/O</li><li><b>Claude</b> — strong vision</li><li><b>Qwen-VL, Llama Vision</b></li></ul></section>
 <section class="block"><h3 class="block-title">Trend</h3><p>Most new frontier models are multimodal by default.</p></section>
+<section class="block"><h3 class="block-title">Modalities supported (May 2026)</h3><ul><li><b>Vision in:</b> all major frontier models (GPT-5, Claude, Gemini, Qwen-VL, Llama Vision)</li><li><b>Audio in:</b> GPT-4o/5, Gemini 2.5+ (native)</li><li><b>Audio out:</b> Gemini 2.5+, GPT-4o Realtime</li><li><b>Video in:</b> Gemini (up to 2 hours), Qwen-VL</li><li><b>Image out:</b> separate models (DALL·E, Imagen, Flux)</li><li><b>Video out:</b> separate models (Sora, Veo)</li></ul></section>
+<section class="block"><h3 class="block-title">Token costs</h3><ul><li><b>Images:</b> 85-765 tokens depending on resolution</li><li><b>Audio in:</b> ~32 tokens per second</li><li><b>Video (Gemini):</b> ~258 tokens per frame, 1 fps default</li></ul></section>
 
 
   <footer class="footer" style="margin-top:24px;padding-top:24px;border-top:none">

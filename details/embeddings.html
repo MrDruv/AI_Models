@@ -412,6 +412,10 @@ table.data td.use{color:#555;font-size:13px}
 
 <div class="container container-narrow">
 
+
+  <a href="../index.html" style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e5e5e5;color:#1a1a1a;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;margin-bottom:16px;transition:all 0.15s ease" onmouseover="this.style.borderColor='#1a1a1a';this.style.transform='translateX(-2px)'" onmouseout="this.style.borderColor='#e5e5e5';this.style.transform='translateX(0)'">
+    <span style="font-size:16px">←</span> Back to Ecosystem Map
+  </a>
   <nav class="breadcrumbs">
     <a href="../index.html">Map</a>
     <span class="sep">/</span>
@@ -435,11 +439,16 @@ table.data td.use{color:#555;font-size:13px}
   <section class="pricing-section">
   <h3 class="block-title">Pricing & Token Usage</h3>
   <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Model</th><th>Input / 1M</th><th>Output / 1M</th><th>Context</th><th>Best for</th></tr></thead><tbody><tr><td class="model">text-embedding-3-large</td><td class="price">$0.13/1M</td><td class="price">—</td><td class="ctx">—</td><td class="use">Default</td></tr><tr><td class="model">text-embedding-3-small</td><td class="price">$0.02/1M</td><td class="price">—</td><td class="ctx">—</td><td class="use">Cheap</td></tr><tr><td class="model">Voyage-3-large</td><td class="price">$0.18/1M</td><td class="price">—</td><td class="ctx">—</td><td class="use">Top quality</td></tr><tr><td class="model">Cohere Embed v3</td><td class="price">$0.10/1M</td><td class="price">—</td><td class="ctx">—</td><td class="use">Solid</td></tr><tr><td class="model">BGE / Nomic (open)</td><td class="price">Free</td><td class="price">—</td><td class="ctx">—</td><td class="use">Self-host</td></tr></tbody></table></div></div>
-  <div class="pricing-cta"><a href="../models-pricing.html">Compare all models side-by-side →</a></div>
 </section>
 
-  <section class="block"><h3 class="block-title">Leaders</h3><ul><li><b>OpenAI text-embedding-3</b></li><li><b>Voyage</b> — domain-specialized</li><li><b>Cohere Embed v3</b></li><li><b>BGE</b> (open)</li><li><b>Nomic Embed</b> (open)</li></ul></section>
+  <section class="block"><h3 class="block-title">In plain English</h3><p>An <b>embedding</b> turns a piece of text (or image) into a long list of numbers — typically 1,024 or 1,536 dimensions — that captures its meaning. Two texts about the same topic will have similar embeddings, even if the words are totally different.</p>
+<p>This is what makes <b>semantic search</b> work. "Cars" and "automobiles" have nearly identical embeddings. This is the foundation of every RAG system, recommendation engine, and "find similar" feature.</p>
+<p><b>Pick:</b> OpenAI <code>text-embedding-3-large</code> is the safe default. Voyage is best for domain-specific (legal, code, finance). BGE/Nomic are free open-source options.</p></section>
+<section class="block"><h3 class="block-title">Leaders</h3><ul><li><b>OpenAI text-embedding-3</b></li><li><b>Voyage</b> — domain-specialized</li><li><b>Cohere Embed v3</b></li><li><b>BGE</b> (open)</li><li><b>Nomic Embed</b> (open)</li></ul></section>
 <section class="block"><h3 class="block-title">Why they matter</h3><p>Foundation of all RAG, semantic search, recommendations.</p></section>
+<section class="block"><h3 class="block-title">How to pick</h3><ol><li>Default: <b>OpenAI text-embedding-3-large</b> or <b>Cohere Embed v3</b></li><li>Need top quality + domain (legal/code/finance): <b>Voyage</b> variants</li><li>Need to self-host: <b>BGE-M3</b> or <b>Nomic Embed</b></li><li>Multimodal (text+image): <b>Cohere Embed v4</b> or <b>jina-clip-v2</b></li></ol></section>
+<section class="block"><h3 class="block-title">Eval benchmarks</h3><p>MTEB (Massive Text Embedding Benchmark) is the standard. As of May 2026, Voyage-3-large and Cohere Embed v4 trade #1/#2 on most categories.</p></section>
+<section class="block"><h3 class="block-title">Dimension considerations</h3><p>Higher dims = better quality but slower search + more storage. Most models offer Matryoshka embeddings — you can truncate to 256/512/1024 dims with minimal quality loss.</p></section>
 
 
   <footer class="footer" style="margin-top:24px;padding-top:24px;border-top:none">

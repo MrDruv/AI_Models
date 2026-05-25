@@ -412,6 +412,10 @@ table.data td.use{color:#555;font-size:13px}
 
 <div class="container container-narrow">
 
+
+  <a href="../index.html" style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e5e5e5;color:#1a1a1a;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;margin-bottom:16px;transition:all 0.15s ease" onmouseover="this.style.borderColor='#1a1a1a';this.style.transform='translateX(-2px)'" onmouseout="this.style.borderColor='#e5e5e5';this.style.transform='translateX(0)'">
+    <span style="font-size:16px">←</span> Back to Ecosystem Map
+  </a>
   <nav class="breadcrumbs">
     <a href="../index.html">Map</a>
     <span class="sep">/</span>
@@ -435,11 +439,15 @@ table.data td.use{color:#555;font-size:13px}
   <section class="pricing-section">
   <h3 class="block-title">Pricing & Token Usage</h3>
   <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Model</th><th>Input / 1M</th><th>Output / 1M</th><th>Context</th><th>Best for</th></tr></thead><tbody><tr><td class="model">Llama 4 Maverick</td><td class="price">$0.22</td><td class="price">$0.88</td><td class="ctx">1M</td><td class="use">FireAttention-optimized</td></tr><tr><td class="model">DeepSeek V3.1</td><td class="price">$0.27</td><td class="price">$1.10</td><td class="ctx">33K</td><td class="use">Fast hosted</td></tr><tr><td class="model">FireFunction-v2</td><td class="price">$0.90</td><td class="price">$0.90</td><td class="ctx">32K</td><td class="use">Function-calling</td></tr></tbody></table></div></div>
-  <div class="pricing-cta"><a href="../models-pricing.html">Compare all models side-by-side →</a></div>
 </section>
 
-  <section class="block"><h3 class="block-title">Overview</h3><p>Specializes in low-latency serving with FireAttention kernels. Often faster than vanilla vLLM.</p></section>
+  <section class="block"><h3 class="block-title">In plain English</h3><p>Like Together AI, but optimized for raw speed. Their <b>FireAttention</b> kernels squeeze 2-4× more throughput out of GPUs than standard implementations.</p>
+<p>Best for production deployments where you've validated which open model you want and now need the cheapest, fastest serving. Strong on function calling and structured outputs.</p></section>
+<section class="block"><h3 class="block-title">Overview</h3><p>Specializes in low-latency serving with FireAttention kernels. Often faster than vanilla vLLM.</p></section>
 <section class="block"><h3 class="block-title">Features</h3><ul><li>FireAttention optimized kernels</li><li>FireFunction — function-calling tuned</li><li>Fine-tuning + serverless</li><li>Audio and image models</li></ul></section>
+<section class="block"><h3 class="block-title">Differentiators</h3><ul><li>FireAttention kernels — 4× faster than vLLM in some benchmarks</li><li>FireFunction-v2 — function-calling fine-tune</li><li>Compound AI Systems (multi-model pipelines)</li><li>HIPAA + SOC 2 compliance</li><li>Fast fine-tuning iteration</li></ul></section>
+<section class="block"><h3 class="block-title">Customers</h3><p>Cresta, Cursor (some workloads), Sourcegraph, Notion, Doordash</p></section>
+<section class="block"><h3 class="block-title">Funding</h3><ul><li>$77M Series B (Jul 2024)</li><li>Valuation: $552M</li><li>Backers: Sequoia, Benchmark, NVIDIA</li></ul></section>
 
 
   <footer class="footer" style="margin-top:24px;padding-top:24px;border-top:none">

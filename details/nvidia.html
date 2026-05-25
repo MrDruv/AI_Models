@@ -412,6 +412,10 @@ table.data td.use{color:#555;font-size:13px}
 
 <div class="container container-narrow">
 
+
+  <a href="../index.html" style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e5e5e5;color:#1a1a1a;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;margin-bottom:16px;transition:all 0.15s ease" onmouseover="this.style.borderColor='#1a1a1a';this.style.transform='translateX(-2px)'" onmouseout="this.style.borderColor='#e5e5e5';this.style.transform='translateX(0)'">
+    <span style="font-size:16px">←</span> Back to Ecosystem Map
+  </a>
   <nav class="breadcrumbs">
     <a href="../index.html">Map</a>
     <span class="sep">/</span>
@@ -433,13 +437,21 @@ table.data td.use{color:#555;font-size:13px}
   </div>
 
   <section class="pricing-section">
-  <h3 class="block-title">Pricing & Token Usage</h3>
-  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Model</th><th>Input / 1M</th><th>Output / 1M</th><th>Context</th><th>Best for</th></tr></thead><tbody><tr><td class="model">H100 80GB</td><td class="price">$25K–$40K</td><td class="price">—</td><td class="ctx">—</td><td class="use">Workhorse</td></tr><tr><td class="model">B200 / GB200</td><td class="price">$30K+ per GPU</td><td class="price">—</td><td class="ctx">—</td><td class="use">Latest Blackwell</td></tr><tr><td class="model">Cloud rental (H100)</td><td class="price">$2–$8/hr</td><td class="price">—</td><td class="ctx">—</td><td class="use">CoreWeave/Lambda</td></tr></tbody></table></div></div>
-  <div class="pricing-cta"><a href="../models-pricing.html">Compare all models side-by-side →</a></div>
+  <h3 class="block-title">Pricing</h3>
+  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Plan / Product</th><th>Price</th><th>Notes</th></tr></thead><tbody><tr><td class="model">H100 80GB</td><td class="price">$25K–$40K</td><td class="use">Workhorse</td></tr><tr><td class="model">B200 / GB200</td><td class="price">$30K+ per GPU</td><td class="use">Latest Blackwell</td></tr><tr><td class="model">Cloud rental (H100)</td><td class="price">$2–$8/hr</td><td class="use">CoreWeave/Lambda</td></tr></tbody></table></div></div>
 </section>
 
-  <section class="block"><h3 class="block-title">Overview</h3><p>Designs GPUs that train and serve nearly all frontier AI models. Market cap crossed $3.5T in 2024–25.</p></section>
+  <div class="block" style="padding:20px"><div style="overflow-x:auto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 222" style="width:100%;max-width:720px;height:auto;font-family:-apple-system,Inter,sans-serif"><text x="0" y="20" font-size="13" font-weight="600" fill="#1a1a1a">AI accelerator market share — % of training compute</text><text x="200" y="68.0" text-anchor="end" font-size="12" fill="#333">NVIDIA</text><rect x="210" y="50" width="356.5" height="28" rx="3" fill="#10b981"/><text x="574.5217391304348" y="68.0" font-size="12" fill="#555" font-weight="500" style="font-variant-numeric:tabular-nums">90%</text><text x="200" y="106.0" text-anchor="end" font-size="12" fill="#333">AMD</text><rect x="210" y="88" width="23.8" height="28" rx="3" fill="#ef4444"/><text x="241.768115942029" y="106.0" font-size="12" fill="#555" font-weight="500" style="font-variant-numeric:tabular-nums">6%</text><text x="200" y="144.0" text-anchor="end" font-size="12" fill="#333">Google TPU (internal)</text><rect x="210" y="126" width="11.9" height="28" rx="3" fill="#f59e0b"/><text x="229.8840579710145" y="144.0" font-size="12" fill="#555" font-weight="500" style="font-variant-numeric:tabular-nums">3%</text><text x="200" y="182.0" text-anchor="end" font-size="12" fill="#333">Others (Groq, Cerebras, etc.)</text><rect x="210" y="164" width="4.0" height="28" rx="3" fill="#94a3b8"/><text x="221.96135265700482" y="182.0" font-size="12" fill="#555" font-weight="500" style="font-variant-numeric:tabular-nums">1%</text></svg></div><p style="font-size:12px;color:#666;margin:8px 0 0 0;text-align:center;font-style:italic">NVIDIA's CUDA software ecosystem creates a moat that's hard for competitors to cross — even when their hardware is competitive.</p></div>
+
+  <section class="block"><h3 class="block-title">In plain English</h3><p><b>NVIDIA makes the picks and shovels of the AI gold rush — and ~90% of the picks.</b> Every frontier model is trained on their GPUs. Their <b>CUDA</b> software has 15+ years of momentum that competitors can't easily replicate.</p>
+<p><b>H100/H200</b> are the current workhorses (~$25-40K each). <b>B200/GB200 NVL72</b> (Blackwell) are the 2025-26 generation — 4× faster than H100. NVIDIA briefly became the world's most valuable company ($4T+ market cap).</p>
+<p>The whole AI economy runs on their chips. When DeepSeek showed you could train frontier models with less compute, NVIDIA stock dropped $600B in one day — that's how concentrated the bet is.</p></section>
+<section class="block"><h3 class="block-title">Overview</h3><p>Designs GPUs that train and serve nearly all frontier AI models. Market cap crossed $3.5T in 2024–25.</p></section>
 <section class="block"><h3 class="block-title">Key Products</h3><ul><li><b>H100/H200</b> — Hopper workhorse</li><li><b>B200/GB200 NVL72</b> — Blackwell, 2025–26</li><li><b>CUDA</b> — software moat</li><li><b>NIM</b> — packaged inference</li></ul></section>
+<section class="block"><h3 class="block-title">Why dominant</h3><ul><li><b>CUDA software moat</b> — 15+ years of libraries, frameworks built on it</li><li><b>NVLink + InfiniBand</b> — networking integrated with compute</li><li><b>Full-stack:</b> chips + networking + reference systems + cuDNN, cuBLAS, TensorRT, NIM</li><li>Tight relationships with every hyperscaler</li></ul></section>
+<section class="block"><h3 class="block-title">Product lineup (2026)</h3><ul><li><b>H100/H200 (Hopper):</b> the workhorse, still dominant</li><li><b>B200/GB200 NVL72 (Blackwell):</b> 2025-26 gen, 4× perf of H100</li><li><b>Rubin (next-gen):</b> 2026-27 announced</li><li><b>NIM:</b> packaged inference microservices</li><li><b>DGX Cloud:</b> NVIDIA's own cloud GPU service</li></ul></section>
+<section class="block"><h3 class="block-title">Financials</h3><ul><li>Market cap crossed $4T in 2025</li><li>Data center revenue: ~$120B+ (FY2025)</li><li>Gross margin: 75%+</li><li>Brief moment as world's most valuable company</li></ul></section>
+<section class="block"><h3 class="block-title">Challenges</h3><ul><li>Hyperscalers building custom silicon (Google TPU, AWS Trainium, MS Maia)</li><li>AMD MI300X gaining traction</li><li>US export controls limiting China sales</li><li>Supply allocation tension between cloud providers</li></ul></section>
 
 
   <footer class="footer" style="margin-top:24px;padding-top:24px;border-top:none">

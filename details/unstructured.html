@@ -412,6 +412,10 @@ table.data td.use{color:#555;font-size:13px}
 
 <div class="container container-narrow">
 
+
+  <a href="../index.html" style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e5e5e5;color:#1a1a1a;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;margin-bottom:16px;transition:all 0.15s ease" onmouseover="this.style.borderColor='#1a1a1a';this.style.transform='translateX(-2px)'" onmouseout="this.style.borderColor='#e5e5e5';this.style.transform='translateX(0)'">
+    <span style="font-size:16px">←</span> Back to Ecosystem Map
+  </a>
   <nav class="breadcrumbs">
     <a href="../index.html">Map</a>
     <span class="sep">/</span>
@@ -433,14 +437,18 @@ table.data td.use{color:#555;font-size:13px}
   </div>
 
   <section class="pricing-section">
-  <h3 class="block-title">Pricing & Token Usage</h3>
-  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Model</th><th>Input / 1M</th><th>Output / 1M</th><th>Context</th><th>Best for</th></tr></thead><tbody><tr><td class="model">Unstructured API</td><td class="price">$0.001–$0.01/page</td><td class="price">—</td><td class="ctx">—</td><td class="use">Serverless</td></tr><tr><td class="model">Unstructured OSS</td><td class="price">Free</td><td class="price">—</td><td class="ctx">—</td><td class="use">Library</td></tr><tr><td class="model">LlamaParse basic</td><td class="price">$0.003/page</td><td class="price">—</td><td class="ctx">—</td><td class="use">Standard</td></tr><tr><td class="model">LlamaParse premium</td><td class="price">$0.045/page</td><td class="price">—</td><td class="ctx">—</td><td class="use">Complex</td></tr></tbody></table></div></div>
-  <div class="pricing-cta"><a href="../models-pricing.html">Compare all models side-by-side →</a></div>
+  <h3 class="block-title">Pricing</h3>
+  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Plan / Product</th><th>Price</th><th>Notes</th></tr></thead><tbody><tr><td class="model">Unstructured API</td><td class="price">$0.001–$0.01/page</td><td class="use">Serverless</td></tr><tr><td class="model">Unstructured OSS</td><td class="price">Free</td><td class="use">Library</td></tr><tr><td class="model">LlamaParse basic</td><td class="price">$0.003/page</td><td class="use">Standard</td></tr><tr><td class="model">LlamaParse premium</td><td class="price">$0.045/page</td><td class="use">Complex</td></tr></tbody></table></div></div>
 </section>
 
-  <section class="block"><h3 class="block-title">Why parsing matters</h3><p>Document parsing is the unglamorous core of RAG — garbage in, garbage out.</p></section>
+  <section class="block"><h3 class="block-title">In plain English</h3><p>Real-world documents are messy — multi-column PDFs, embedded tables, scanned images, footnotes. <b>Unstructured.io</b> and <b>LlamaParse</b> are the cleanup crew: they turn that mess into clean text + structured data that LLMs can actually understand.</p>
+<p>This is the unglamorous core of RAG — bad parsing = bad answers. LlamaParse uses LLMs themselves for the hardest cases (complex tables, charts).</p></section>
+<section class="block"><h3 class="block-title">Why parsing matters</h3><p>Document parsing is the unglamorous core of RAG — garbage in, garbage out.</p></section>
 <section class="block"><h3 class="block-title">Unstructured.io</h3><p>30+ file types. Open-source + commercial API + on-prem.</p></section>
 <section class="block"><h3 class="block-title">LlamaParse</h3><p>Specializes in complex PDFs with tables/charts using LLMs themselves.</p></section>
+<section class="block"><h3 class="block-title">File types supported</h3><p>PDF, DOCX, PPTX, XLSX, HTML, MD, EPUB, ODT, RTF, TXT, EML, MSG, images (OCR), JPEG, PNG, TIFF.</p></section>
+<section class="block"><h3 class="block-title">Why it&#x27;s hard</h3><p>Real-world docs have multi-column layouts, embedded tables, figures, footnotes, headers/footers, scanned content. Naive parsers (PyPDF) miss most structure. <b>LlamaParse</b> uses LLMs to interpret complex layouts and tables semantically.</p></section>
+<section class="block"><h3 class="block-title">Funding</h3><ul><li>$65M Series B (May 2024)</li><li>Backers: Bain Capital Ventures, Madrona, Mantis VC</li></ul></section>
 
 
   <footer class="footer" style="margin-top:24px;padding-top:24px;border-top:none">
