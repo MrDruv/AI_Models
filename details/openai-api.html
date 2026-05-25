@@ -437,9 +437,11 @@ table.data td.use{color:#555;font-size:13px}
   </div>
 
   <section class="pricing-section">
-  <h3 class="block-title">Pricing</h3>
-  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Plan / Product</th><th>Price</th><th>Notes</th></tr></thead><tbody><tr><td class="model">Pay-as-you-go</td><td class="price">per-token · see model</td><td class="use">varies · All OpenAI models</td></tr><tr><td class="model">Batch API</td><td class="price">50% off · 50% off</td><td class="use">Async 24h</td></tr><tr><td class="model">Cached input</td><td class="price">90% off</td><td class="use">Repeated context</td></tr></tbody></table></div></div>
-</section>
+    <h3 class="block-title">Platform-Specific Pricing</h3>
+    <p style="font-size:13px;color:#666;margin:0 0 12px 0">Costs unique to this gateway — for model token rates, see the vendor's page in Layer 1.</p>
+    <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Plan / Service</th><th>Price</th><th>Notes</th></tr></thead><tbody><tr><td class="model">Standard inference</td><td class="price">Same as model page rates</td><td class="use">See OpenAI vendor page for GPT-5, o3 etc.</td></tr><tr><td class="model">Batch API</td><td class="price">−50% on input & output</td><td class="use">Async, 24-hour SLA</td></tr><tr><td class="model">Cached input</td><td class="price">−50% to −90%</td><td class="use">Re-using repeated system prompts</td></tr><tr><td class="model">Fine-tuning</td><td class="price">1.5–3× base inference rate</td><td class="use">Per-token, plus training cost</td></tr><tr><td class="model">Fine-tune training</td><td class="price">$25 / 1M tokens (GPT-4o-mini)</td><td class="use">Varies by base model</td></tr><tr><td class="model">Scale Tier (enterprise)</td><td class="price">Committed contract</td><td class="use">Reserved throughput, predictable pricing</td></tr></tbody></table></div></div>
+    <p style="font-size:12.5px;color:#78350f;margin-top:14px;background:#fff;border:1px solid #fde68a;border-left:3px solid #d97706;padding:12px 16px;border-radius:6px;line-height:1.55"><a href='openai.html'>↗ See full GPT, o-series model prices on the OpenAI page</a></p>
+  </section>
 
   <section class="block"><h3 class="block-title">In plain English</h3><p>This is OpenAI's developer portal — where engineers integrate ChatGPT-like capabilities into their own apps. You sign up, get an API key, send HTTP requests, pay per token.</p>
 <p><b>Key tricks to save money:</b> Use the <b>Batch API</b> (50% off if you can wait 24 hours), use <b>cached input</b> (90% off when you re-send the same system prompt), and downsize to GPT-5 Nano for simple tasks.</p>

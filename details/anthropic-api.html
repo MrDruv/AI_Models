@@ -437,9 +437,11 @@ table.data td.use{color:#555;font-size:13px}
   </div>
 
   <section class="pricing-section">
-  <h3 class="block-title">Pricing</h3>
-  <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Plan / Product</th><th>Price</th><th>Notes</th></tr></thead><tbody><tr><td class="model">Standard</td><td class="price">full · full</td><td class="use">varies · Default</td></tr><tr><td class="model">Cache write</td><td class="price">1.25×</td><td class="use">First call</td></tr><tr><td class="model">Cache read</td><td class="price">0.1× (-90%)</td><td class="use">Subsequent calls</td></tr><tr><td class="model">Batch API</td><td class="price">-50% · -50%</td><td class="use">Async 24h</td></tr></tbody></table></div></div>
-</section>
+    <h3 class="block-title">Platform-Specific Pricing</h3>
+    <p style="font-size:13px;color:#666;margin:0 0 12px 0">Costs unique to this gateway — for model token rates, see the vendor's page in Layer 1.</p>
+    <div class="table-wrap"><div class="table-scroll"><table class="data"><thead><tr><th>Plan / Service</th><th>Price</th><th>Notes</th></tr></thead><tbody><tr><td class="model">Standard inference</td><td class="price">Same as model page rates</td><td class="use">See Anthropic page for Opus/Sonnet/Haiku</td></tr><tr><td class="model">Cache write</td><td class="price">1.25× input rate</td><td class="use">First call writes the cache</td></tr><tr><td class="model">Cache read</td><td class="price">0.10× input rate (−90%)</td><td class="use">Subsequent calls reading cache</td></tr><tr><td class="model">Batch API</td><td class="price">−50% on input & output</td><td class="use">Async, 24-hour SLA</td></tr><tr><td class="model">Priority Tier</td><td class="price">Custom enterprise contract</td><td class="use">Guaranteed throughput</td></tr></tbody></table></div></div>
+    <p style="font-size:12.5px;color:#78350f;margin-top:14px;background:#fff;border:1px solid #fde68a;border-left:3px solid #d97706;padding:12px 16px;border-radius:6px;line-height:1.55"><a href='anthropic.html'>↗ See full Claude Opus / Sonnet / Haiku prices on the Anthropic page</a></p>
+  </section>
 
   <section class="block"><h3 class="block-title">In plain English</h3><p>This is Anthropic's developer portal — Claude as an API. Same shape as OpenAI's (chat completions, streaming, tools, vision) but with one killer feature: <b>prompt caching</b>, which can cut your bill by 90% if you have a large repeated system prompt or context.</p>
 <p><b>Computer Use</b> beta lets Claude actually control a virtual desktop — clicking, typing, scrolling. It's the cleanest path to "AI does work on a real screen."</p></section>
