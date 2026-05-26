@@ -1,24 +1,10 @@
-AI Ecosystem Map — Light Edition (May 2026)
-============================================
+AI ECOSYSTEM :: GREY EDITION
+============================
 
-QUICK START
------------
-1. Unzip anywhere on your computer.
-2. Double-click index.html to open the map.
-3. Click any card to open a vendor's profile.
-4. Top navigation: Map / Pricing.
+  $ open index.html
 
-DESIGN
-------
-Clean light theme. White surfaces on near-white background.
-Black text. Subtle accent colors. Inter typeface.
+Monochrome grey terminal aesthetic. CRT scanlines, binary rain on hover,
+blinking cursor, glitch text effects. Same engine as the hacker edition,
+just a calmer silver/white palette.
 
-FILES
------
-- index.html              Main 8-layer ecosystem map
-- models-pricing.html     Side-by-side pricing comparison
-- details/                74 vendor profile pages
-- README.txt              This file
-
-Every file is fully self-contained (inline CSS).
-Works offline in any modern browser.
+Built with Arena.ai Agent Mode.
